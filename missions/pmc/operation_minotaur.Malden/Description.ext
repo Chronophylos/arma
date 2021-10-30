@@ -1,0 +1,12 @@
+class CfgFunctions {
+	class PAG {
+		class SFX {
+			class createOilfireSFX {};
+			class initBigDieselTank {};
+		};
+		class Tasks {
+			class cascadeTaskCompletion {};
+			class initDestructionTarget {};
+		}
+	};
+};
