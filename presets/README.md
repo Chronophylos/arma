@@ -10,3 +10,5 @@
 | --- | --- |
 | Evermind | [raw](https://raw.githubusercontent.com/Chronophylos/arma/main/presets/Evermind.html) |
 | Operation Herrick | [raw](https://raw.githubusercontent.com/Chronophylos/arma/main/presets/Operation%20Herrick.html) |
+| Antistasi 2020 | [raw](https://raw.githubusercontent.com/Chronophylos/arma/main/presets/Antistasi%202022.html) |
+| Antistasi 2020 Server | [raw](https://raw.githubusercontent.com/Chronophylos/arma/main/presets/Antistasi%202022%20Server.html) |
