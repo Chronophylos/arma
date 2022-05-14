@@ -39,12 +39,12 @@ class CfgRespawnInventory
 		icon = "\A3\ui_f\data\map\VehicleIcons\iconManCommander_ca.paa";
 		role = "MonkeCommander";
 		show = "_this == monke_commander";
-		uniformClass = "USP_TSHIRT_G3C_KP_GRY_KHK";
+		uniformClass = "UK3CB_TKM_I_U_06";
 		backpack = "UK3CB_B_B_Radio_Backpack";
 		weapons[] = {"rhs_weap_cz99_etched", "Binocular"};
 		magazines[] = {"rhssaf_mag_15Rnd_9x19_JHP", "rhssaf_mag_15Rnd_9x19_JHP"};
 		items[] = {"ACE_EarPlugs", "ACE_microDAGR", "ACE_MapTools", "ACE_Banana", "ACE_CableTie", "ACE_CableTie", "ACE_CableTie", "ACE_CableTie", "ACE_EarPlugs"};
-		linkedItems[] = {"USP_BASEBALL_CAP_PANTHERS", "G_Aviator", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemGPS"};
+		linkedItems[] = {"UK3CB_H_Safari_Hat_Brown","G_Aviator", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemGPS"};
 	};
 
 	class MonkeSquadleader
