@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15123.972,79.936203,4346.6191};
-		dir[]={-0.32203364,-0.51842785,0.79221547};
-		up[]={-0.19523208,0.85510457,0.4802787};
-		aside[]={0.92641938,-5.7043508e-008,0.37658766};
+		pos[]={15113.767,63.911129,4351.6924};
+		dir[]={-0.02219972,-0.53077918,0.84722197};
+		up[]={-0.013903112,0.84750944,0.53059697};
+		aside[]={0.99965852,4.604226e-008,0.026194185};
 	};
 };
 binarizationWanted=0;
@@ -26017,7 +26017,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15111.065,46.39283,4348.25};
-				angles[]={0.016004669,0,6.2541952};
+				angles[]={0.016004669,0,6.2541947};
 			};
 			side="Empty";
 			flags=4;
@@ -30839,7 +30839,7 @@ class Mission
 			};
 			id=322;
 			type="Box_NATO_WpsLaunch_F";
-			atlOffset=0.015365601;
+			atlOffset=0.015422821;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33196,7 +33196,7 @@ class Mission
 			};
 			id=486;
 			type="UK3CB_AK47_Equipbox_Opfor";
-			atlOffset=0.18900299;
+			atlOffset=0.18900108;
 			class CustomAttributes
 			{
 				class Attribute0
