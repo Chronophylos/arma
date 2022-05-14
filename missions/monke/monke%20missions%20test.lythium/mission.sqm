@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=10;
+	toggles=2;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=526;
+		nextID=619;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3;
+		nextID=4;
 	};
 	class Camera
 	{
-		pos[]={15149.455,63.911129,4326.0449};
-		dir[]={-0.60331297,-0.39926469,0.69036806};
-		up[]={-0.26273087,0.91683364,0.30064178};
-		aside[]={0.75298864,-1.4202669e-008,0.65803725};
+		pos[]={15247.301,208.16328,4331.8267};
+		dir[]={-0.72026104,-0.69274348,-0.037177783};
+		up[]={-0.69183433,0.72117186,-0.035710238};
+		aside[]={-0.051549193,-1.640874e-007,0.99869508};
 	};
 };
 binarizationWanted=0;
@@ -77,7 +77,8 @@ addons[]=
 	"ace_common",
 	"UK3CB_Factions_Weapons_AK47",
 	"rhs_c_weapons",
-	"tfar_antennas"
+	"tfar_antennas",
+	"A3_Modules_F_Intel"
 };
 class AddonsMetaData
 {
@@ -25467,7 +25468,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=55;
+		items=59;
 		class Item0
 		{
 			dataType="Logic";
@@ -33054,7 +33055,7 @@ class Mission
 		class Item27
 		{
 			dataType="Trigger";
-			position[]={15111.691,45.433353,4354.1348};
+			position[]={15111.69,45.433388,4354.1348};
 			class Attributes
 			{
 				name="triggerBase";
@@ -34160,6 +34161,328 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item55
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={15080.453,45.561687,4355.186};
+			};
+			id=528;
+			type="ModuleCreateDiaryRecord_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCreateDiaryRecord_F_PresetTitle";
+					expression="_this setVariable ['PresetTitle',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Situation";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCreateDiaryRecord_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Military Compound in Arobster";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCreateDiaryRecord_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="<h1>Target Military Compound in Arobster</h1><img image='images\Arobster-Military_Compound-Satellite.paa' width='512' height='512'/>";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCreateDiaryRecord_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCreateDiaryRecord_F_Subject";
+					expression="_this setVariable ['Subject',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Intel";
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item56
+		{
+			dataType="Trigger";
+			position[]={15107.839,45.413544,4347.312};
+			class Attributes
+			{
+				sizeA=42.929001;
+				sizeB=80.213997;
+				sizeC=0;
+				type="WEST G";
+			};
+			id=532;
+			type="EmptyDetectorAreaR250";
+			atlOffset=-0.24699783;
+		};
+		class Item57
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=10;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15105.942,46.054329,4334.4028};
+						angles[]={-0,0,6.2462029};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="SERGEANT";
+					};
+					id=544;
+					type="rhsusf_army_ocp_arb_squadleader";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15105.942,46.135185,4331.9526};
+						angles[]={-0,0,6.2462029};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+					};
+					id=545;
+					type="rhsusf_army_ocp_arb_teamleader";
+					atlOffset=0.0017700195;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15105.942,46.155857,4329.4526};
+						angles[]={6.278182,0,6.244206};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=546;
+					type="rhsusf_army_ocp_arb_rifleman";
+					atlOffset=-0.027805328;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15105.942,46.103355,4326.9526};
+						angles[]={6.278182,0,6.244206};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+					};
+					id=547;
+					type="rhsusf_army_ocp_arb_autorifleman";
+					atlOffset=-0.027809143;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15105.942,46.049507,4324.4526};
+						angles[]={6.278182,0,6.244206};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=548;
+					type="rhsusf_army_ocp_arb_grenadier";
+					atlOffset=-0.029155731;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15107.857,46.041061,4332.019};
+						angles[]={6.278182,0,6.244206};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+					};
+					id=549;
+					type="rhsusf_army_ocp_arb_teamleader";
+					atlOffset=0.0017776489;
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15107.857,46.065323,4329.519};
+						angles[]={6.2531939,0,6.2392135};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=550;
+					type="rhsusf_army_ocp_arb_autorifleman";
+					atlOffset=-0.027801514;
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15107.857,46.012821,4327.019};
+						angles[]={6.2531939,0,6.2392135};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=551;
+					type="rhsusf_army_ocp_arb_grenadier";
+					atlOffset=-0.027805328;
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={15107.857,45.960323,4324.519};
+						angles[]={6.2531939,0,6.2392135};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+					};
+					id=552;
+					type="rhsusf_army_ocp_arb_riflemanat";
+					atlOffset=-0.027801514;
+				};
+				class Item9
+				{
+					dataType="Waypoint";
+					loiterAltitude=-3.4028235e+038;
+					position[]={15110.893,44.789482,4357.8442};
+					type="Guard";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=553;
+					atlOffset=-0.58385086;
+				};
+			};
+			class Attributes
+			{
+				behaviour="SAFE";
+			};
+			id=543;
+		};
+		class Item58
+		{
+			dataType="Layer";
+			name="Middle Eastern Governor Compound";
+			id=618;
+			atlOffset=4.0090504;
 		};
 	};
 };
