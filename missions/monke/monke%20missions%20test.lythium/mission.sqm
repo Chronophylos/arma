@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15113.767,63.911129,4351.6924};
-		dir[]={-0.02219972,-0.53077918,0.84722197};
-		up[]={-0.013903112,0.84750944,0.53059697};
-		aside[]={0.99965852,4.604226e-008,0.026194185};
+		pos[]={15149.455,63.911129,4326.0449};
+		dir[]={-0.60331297,-0.39926469,0.69036806};
+		up[]={-0.26273087,0.91683364,0.30064178};
+		aside[]={0.75298864,-1.4202669e-008,0.65803725};
 	};
 };
 binarizationWanted=0;
@@ -25391,7 +25391,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="Peloson Camp Base, Nordafghanistan";
+								value="Peloson Camp Base";
 							};
 						};
 						class Item2
@@ -25405,7 +25405,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="2015-03-11";
+								value="Nordafghanistan";
 							};
 						};
 						class Item3
@@ -25419,7 +25419,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="10:30";
+								value="2015-03-11 10:30";
 							};
 						};
 						class Item4
@@ -30839,7 +30839,7 @@ class Mission
 			};
 			id=322;
 			type="Box_NATO_WpsLaunch_F";
-			atlOffset=0.015422821;
+			atlOffset=0.015365601;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33196,7 +33196,7 @@ class Mission
 			};
 			id=486;
 			type="UK3CB_AK47_Equipbox_Opfor";
-			atlOffset=0.18900108;
+			atlOffset=0.18900299;
 			class CustomAttributes
 			{
 				class Attribute0
