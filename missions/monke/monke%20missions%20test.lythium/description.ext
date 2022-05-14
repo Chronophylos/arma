@@ -1,0 +1,116 @@
+class CfgRoles
+{
+	class MonkeCommander
+	{
+		displayName = "Commander";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManCommander_ca.paa";
+	};
+
+	class MonkeSquadleader
+	{
+		displayName = "Squad Leader";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManOfficer_ca.paa";
+	};
+
+	class MonkeMedic
+	{
+		displayName = "Medic";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManMedic_ca.paa";
+	};
+
+	class MonkeRifleman
+	{
+		displayName = "Rifleman";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconMan_ca.paa";
+	};
+
+	class MonkeMachinegunner
+	{
+		displayName = "Machinegunner";
+	};
+};
+
+//Biki: https://community.bistudio.com/wiki/Arma_3_Respawn#Loadouts_and_Roles
+class CfgRespawnInventory
+{
+	class MonkeKommander
+	{
+		displayName = "Commander";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManCommander_ca.paa";
+		role = "MonkeCommander";
+		show = "_this == monke_commander";
+		uniformClass = "USP_TSHIRT_G3C_KP_GRY_KHK";
+		backpack = "UK3CB_B_B_Radio_Backpack";
+		weapons[] = {"rhs_weap_cz99_etched", "Binocular"};
+		magazines[] = {"rhssaf_mag_15Rnd_9x19_JHP", "rhssaf_mag_15Rnd_9x19_JHP"};
+		items[] = {"ACE_EarPlugs", "ACE_microDAGR", "ACE_MapTools", "ACE_Banana", "ACE_CableTie", "ACE_CableTie", "ACE_CableTie", "ACE_CableTie", "ACE_EarPlugs"};
+		linkedItems[] = {"USP_BASEBALL_CAP_PANTHERS", "G_Aviator", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "ItemGPS"};
+	};
+
+	class MonkeSquadleader
+	{
+		displayName = "Squad Leader";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManOfficer_ca.paa";
+		role = "MonkeSquadleader";
+		show = "leader group _this == _this";
+		uniformClass = "UK3CB_ADR_B_U_CombatUniform_CC_KHK";
+		backpack = "UK3CB_B_B_Radio_Backpack";
+		weapons[] = {"rhs_weap_l1a1", "Binocular"};
+		magazines[] = {"rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal"};
+		items[] = {"ACE_EarPlugs", "ACE_microDAGR", "ACE_MapTools", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_morphine", "ACE_morphine", "ACE_tourniquet", "ACE_tourniquet"};
+		linkedItems[] = {"UK3CB_TKA_I_V_6Sh92_Des", "rhsgref_helmet_M1_des", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152", "rhsgref_acc_falMuzzle_l1a1"};
+	};
+
+	class MonkeRifleman1 {
+		displayName = "Rifleman (Sa vz. 58)";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconMan_ca.paa";
+		role = "MonkeRifleman";
+		show = "true";
+		uniformClass = "UK3CB_ADR_B_U_CombatUniform_CC_KHK";
+		weapons[] = {"rhs_weap_savz58p"};
+		magazines[] = {"rhs_30Rnd_762x39mm_Savz58_tracer", "rhs_30Rnd_762x39mm_Savz58_tracer", "rhs_30Rnd_762x39mm_Savz58_tracer", "rhs_30Rnd_762x39mm_Savz58_tracer", "rhs_30Rnd_762x39mm_Savz58_tracer", "rhs_30Rnd_762x39mm_Savz58_tracer"};
+		items[] = {"ACE_EarPlugs", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_morphine", "ACE_morphine", "ACE_tourniquet", "ACE_tourniquet"};
+		linkedItems[] = {"UK3CB_TKA_I_V_6Sh92_Des", "rhsgref_helmet_M1_des", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152"};
+	};
+
+	class MonkeRifleman3 {
+		displayName = "Rifleman (FN FAL)";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconMan_ca.paa";
+		role = "MonkeRifleman";
+		show = "true";
+		uniformClass = "UK3CB_ADR_B_U_CombatUniform_CC_KHK";
+		weapons[] = {"uk3cb_fnfal_para"};
+		magazines[] = {"rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal"};
+		items[] = {"ACE_EarPlugs", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_morphine", "ACE_morphine", "ACE_tourniquet", "ACE_tourniquet"};
+		linkedItems[] = {"UK3CB_TKA_I_V_6Sh92_Des", "rhsgref_helmet_M1_des", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152"};
+	};
+
+	class MonkeMachinegunner {
+		displayName = "Machinegunner";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManMG_ca.paa";
+		role = "MonkeMachinegunner";
+		show = "true";
+		uniformClass = "UK3CB_ADR_B_U_CombatUniform_CC_KHK";
+		weapons[] = {"uk3cb_m60"};
+		magazines[] = {"rhsusaf_100rnd_762x51_m62_tracer", "rhsusaf_100rnd_762x51_m62_tracer", "rhsusaf_100rnd_762x51_m62_tracer", "rhsusaf_100rnd_762x51_m62_tracer", "rhsusaf_100rnd_762x51_m62_tracer"};
+		items[] = {"ACE_EarPlugs", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_morphine", "ACE_morphine", "ACE_tourniquet", "ACE_tourniquet"};
+		linkedItems[] = {"UK3CB_TKA_I_V_6Sh92_Des", "rhsgref_helmet_M1_des", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152"};
+	};
+
+	//class MonkeEngineer {};
+	class MonkeMedic {
+		displayName = "Medic";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManMedic_ca.paa";
+		role = "MonkeMedic";
+		show = "_this getVariable ['ace_medical_medicClass', 0]> 0";
+		uniformClass = "UK3CB_ADR_B_U_CombatUniform_CC_KHK";
+		backpack = "UK3CB_TKP_I_B_ASS_MED_TAN";
+		weapons[] = {"rhs_weap_l1a1"};
+		magazines[] = {"rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal", "rhs_mag_20Rnd_762x51_m62_fnfal"};
+		items[] = {"ACE_EarPlugs", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_packingBandage", "ACE_morphine", "ACE_morphine", "ACE_tourniquet", "ACE_tourniquet", "ACE_bloodIV_500", "ACE_bloodIV_500", "ACE_bloodIV_500", "ACE_bloodIV_500", "ACE_bloodIV_500", "ACE_bloodIV_500", "ACE_bloodIV_500", "ACE_bloodIV_500", "ACE_bloodIV_500", "ACE_bloodIV_500", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_tourniquet", "ACE_tourniquet", "ACE_tourniquet", "ACE_tourniquet", "ACE_surgicalKit", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_elasticBandage", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot", "ACE_quikclot"};
+		linkedItems[] = {"UK3CB_TKA_I_V_6Sh92_Des", "rhsgref_helmet_M1_des", "ItemMap", "ItemCompass", "ItemWatch", "TFAR_anprc152"};
+	};
+};
+// expression="_this setUnitTrait ['Engineer', _value]";
+// expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+// expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
