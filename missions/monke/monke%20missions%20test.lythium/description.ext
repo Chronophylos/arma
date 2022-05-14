@@ -27,6 +27,7 @@ class CfgRoles
 	class MonkeMachinegunner
 	{
 		displayName = "Machinegunner";
+		icon = "\A3\ui_f\data\map\VehicleIcons\iconManMG_ca.paa";
 	};
 };
 
