@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4;
+		nextID=5;
 	};
 	class Camera
 	{
-		pos[]={15247.301,208.16328,4331.8267};
-		dir[]={-0.72026104,-0.69274348,-0.037177783};
-		up[]={-0.69183433,0.72117186,-0.035710238};
-		aside[]={-0.051549193,-1.640874e-007,0.99869508};
+		pos[]={15111.203,50.734131,4339.5693};
+		dir[]={0.14475031,-0.36019018,0.92158359};
+		up[]={0.055888806,0.93287849,0.35582963};
+		aside[]={0.98789185,-3.7573045e-008,-0.15516552};
 	};
 };
 binarizationWanted=0;
@@ -118,7 +118,7 @@ class AddonsMetaData
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item5
 		{
@@ -152,7 +152,7 @@ class AddonsMetaData
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item10
 		{
@@ -173,77 +173,77 @@ class AddonsMetaData
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item13
 		{
 			className="ace_huntir";
 			name="ACE3 - HuntIR";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item14
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item15
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item16
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item17
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item18
 		{
 			className="ace_kestrel4500";
 			name="ACE3 - Kestrel 4500";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item19
 		{
 			className="ace_dagr";
 			name="ACE3 - DAGR";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item20
 		{
 			className="ace_atragmx";
 			name="ACE3 - ATragMX";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item21
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item22
 		{
 			className="ace_logistics_uavbattery";
 			name="ACE3 - Logistics UAV Battery";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item23
 		{
@@ -264,7 +264,7 @@ class AddonsMetaData
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item26
 		{
@@ -313,7 +313,7 @@ class AddonsMetaData
 			className="ace_sitting";
 			name="ACE3 - Sitting";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item33
 		{
@@ -333,7 +333,7 @@ class AddonsMetaData
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USF Compatibility";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item36
 		{
@@ -347,7 +347,7 @@ class AddonsMetaData
 			className="ace_common";
 			name="ACE3 - Common";
 			author="ACE-Team";
-			url="http://ace3mod.com/";
+			url="https://ace3.acemod.org/";
 		};
 		class Item38
 		{
@@ -25993,7 +25993,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -26249,7 +26249,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+							value="[[[[],[]],[[""rhs_mag_20Rnd_762x51_m62_fnfal"",""rhs_30Rnd_762x39mm_Savz58"",""UK3CB_M60_100rnd_762x51_RT""],[1,1,1]],[[""ACE_fieldDressing"",""ACE_elasticBandage"",""ACE_packingBandage"",""ACE_quikclot"",""ACE_bloodIV_250"",""ACE_bloodIV_500"",""ACE_bloodIV"",""ACE_EarPlugs"",""ItemCompass"",""ACE_epinephrine"",""ACE_Flashlight_MX991"",""ItemMap"",""ACE_MapTools"",""ACE_morphine"",""ACE_splint"",""ItemWatch"",""ACE_wirecutter"",""rhssaf_zrak_rd7j"",""TFAR_anprc152"",""ACE_adenosine""],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],[[],[]]],true]";
 						};
 					};
 				};
@@ -30661,7 +30661,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
+					expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 					class Value
 					{
 						class data
@@ -30840,7 +30840,7 @@ class Mission
 			};
 			id=322;
 			type="Box_NATO_WpsLaunch_F";
-			atlOffset=0.015365601;
+			atlOffset=0.015422821;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33033,7 +33033,7 @@ class Mission
 				class Attribute2
 				{
 					property="ace_fastroping_equipFRIES";
-					expression="[_this] call ace_fastroping_fnc_equipFRIES";
+					expression="if (_value) then {[_this] call ace_fastroping_fnc_equipFRIES}";
 					class Value
 					{
 						class data
@@ -33089,7 +33089,7 @@ class Mission
 				class Attribute0
 				{
 					property="ENH_objectScaling";
-					expression="  if (is3DEN) then  {    _this addEventHandler ['AttributesChanged3DEN',    {      params ['_object'];      _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);    }];    _this addEventHandler ['Dragged3DEN',    {      params ['_object'];      _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);    }];  };  [_this, _value] spawn {sleep 0.01; (_this select 0) setObjectScale (_this select 1)}";
+					expression="  if (is3DEN) then  {    _this addEventHandler ['AttributesChanged3DEN',    {      params ['_object'];      _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);    }];    _this addEventHandler ['Dragged3DEN',    {      params ['_object'];      _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);    }];  };  [_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}";
 					class Value
 					{
 						class data
@@ -33197,7 +33197,7 @@ class Mission
 			};
 			id=486;
 			type="UK3CB_AK47_Equipbox_Opfor";
-			atlOffset=0.18900299;
+			atlOffset=0.18900108;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34299,7 +34299,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={15105.942,46.054329,4334.4028};
-						angles[]={-0,0,6.2462029};
+						angles[]={0,0,6.2462029};
 					};
 					side="West";
 					flags=7;
@@ -34316,7 +34316,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={15105.942,46.135185,4331.9526};
-						angles[]={-0,0,6.2462029};
+						angles[]={0,0,6.2462029};
 					};
 					side="West";
 					flags=5;
@@ -34482,7 +34482,7 @@ class Mission
 			dataType="Layer";
 			name="Middle Eastern Governor Compound";
 			id=618;
-			atlOffset=4.0090504;
+			atlOffset=-140.66;
 		};
 	};
 };
