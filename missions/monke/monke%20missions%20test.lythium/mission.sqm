@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class Camera
 	{
-		pos[]={15111.203,50.734131,4339.5693};
-		dir[]={0.14475031,-0.36019018,0.92158359};
-		up[]={0.055888806,0.93287849,0.35582963};
-		aside[]={0.98789185,-3.7573045e-008,-0.15516552};
+		pos[]={15147.248,70.932449,4337.3398};
+		dir[]={-0.80228138,-0.54962003,0.23297152};
+		up[]={-0.52781892,0.8354131,0.1532712};
+		aside[]={0.27886903,3.2363459e-008,0.96033692};
 	};
 };
 binarizationWanted=0;
@@ -25698,7 +25698,7 @@ class Mission
 						class Attribute0
 						{
 							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
+							expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
 							class Value
 							{
 								class data
@@ -25717,7 +25717,7 @@ class Mission
 						class Attribute1
 						{
 							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
+							expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
 							class Value
 							{
 								class data
@@ -25736,7 +25736,7 @@ class Mission
 						class Attribute2
 						{
 							property="ENH_unitTraits_engineer";
-							expression="_this setUnitTrait ['Engineer', _value]";
+							expression="[_this, ['Engineer', _value]] remoteExec ['setUnitTrait', _this]";
 							class Value
 							{
 								class data
@@ -25774,7 +25774,7 @@ class Mission
 						class Attribute4
 						{
 							property="ENH_unitTrait_UAVHacker";
-							expression="_this setUnitTrait ['UAVHacker', _value]";
+							expression="[_this, ['UAVHacker', _value]] remoteExec ['setUnitTrait', _this]";
 							class Value
 							{
 								class data
@@ -25850,7 +25850,7 @@ class Mission
 						class Attribute8
 						{
 							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
+							expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
 							class Value
 							{
 								class data
@@ -25907,7 +25907,7 @@ class Mission
 						class Attribute11
 						{
 							property="ENH_unitTraits_medic";
-							expression="_this setUnitTrait ['Medic', _value]";
+							expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
 							class Value
 							{
 								class data
@@ -25945,7 +25945,7 @@ class Mission
 						class Attribute13
 						{
 							property="ENH_unitTrait_explosiveSpecialist";
-							expression="_this setUnitTrait ['ExplosiveSpecialist', _value]";
+							expression="[_this, ['ExplosiveSpecialist', _value]] remoteExec ['setUnitTrait', _this]";
 							class Value
 							{
 								class data
@@ -30840,7 +30840,7 @@ class Mission
 			};
 			id=322;
 			type="Box_NATO_WpsLaunch_F";
-			atlOffset=0.015422821;
+			atlOffset=0.015365601;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -33089,7 +33089,7 @@ class Mission
 				class Attribute0
 				{
 					property="ENH_objectScaling";
-					expression="  if (is3DEN) then  {    _this addEventHandler ['AttributesChanged3DEN',    {      params ['_object'];      _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);    }];    _this addEventHandler ['Dragged3DEN',    {      params ['_object'];      _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);    }];  };  [_this, _value] spawn {sleep 0.5; (_this select 0) setObjectScale (_this select 1)}";
+					expression="  if (is3DEN) then  {    _this addEventHandler ['AttributesChanged3DEN',    {      params ['_object'];      _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);    }];    _this addEventHandler ['Dragged3DEN',    {      params ['_object'];      _object setObjectScale ((_object get3DENAttribute 'ENH_objectScaling') # 0);    }];  };  if (!isMultiplayer) then {_this setObjectScale _value}";
 					class Value
 					{
 						class data
@@ -33197,7 +33197,7 @@ class Mission
 			};
 			id=486;
 			type="UK3CB_AK47_Equipbox_Opfor";
-			atlOffset=0.18900108;
+			atlOffset=0.18900299;
 			class CustomAttributes
 			{
 				class Attribute0
