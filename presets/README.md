@@ -12,3 +12,5 @@
 | Operation Herrick | [raw](https://raw.githubusercontent.com/Chronophylos/arma/main/presets/Operation%20Herrick.html) |
 | Antistasi 2022 | [raw](https://raw.githubusercontent.com/Chronophylos/arma/main/presets/Antistasi%202022.html) |
 | Antistasi 2022 Server | [raw](https://raw.githubusercontent.com/Chronophylos/arma/main/presets/Antistasi%202022%20Server.html) |
+| Monke Mission | [raw](https://raw.githubusercontent.com/Chronophylos/arma/main/presets/Monke%20Mission%20Test%20-%20Player.html) |
+| Monke Mission Server | [raw](https://raw.githubusercontent.com/Chronophylos/arma/main/presets/Monke%20Mission%20Test.html) |
