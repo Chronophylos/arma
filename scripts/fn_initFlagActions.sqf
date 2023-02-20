@@ -14,19 +14,14 @@
 	[] call PAG_fnc_initFlagActions;
 */
 
-PAG_fnc_isValidFlagBearer = {
+PAG_fnc_canToggleFlag = {
 	params ["_caller", "_target"];
 
+	if (!([_target] call PAG_fnc_isValidFlagBearer)) exitWith {
+		false
+	};
+
 	if (_target == _caller) exitWith {
-		false
-	};
-	if (!alive _target) exitWith {
-		false
-	};
-	if (isPlayer _target) exitWith {
-		false
-	};
-	if (!(_target isKindOf 'AllVehicles')) exitWith {
 		false
 	};
 	if (!(side _caller == side _target || count crew _target == 0)) exitWith {
@@ -34,6 +29,25 @@ PAG_fnc_isValidFlagBearer = {
 	};
 
 	true
+};
+
+PAG_fnc_isValidFlagBearer = {
+	params ["_target"];
+
+	if (!alive _target) exitWith {
+		[false, "Is Dead or Destroyed"]
+	};
+	if (isNull _target) exitWith {
+		[false, "Is null"]
+	};
+	if (isPlayer _target) exitWith {
+		[false, "Is a Player"]
+	};
+	if (!(_target isKindOf 'AllVehicles')) exitWith {
+		[false, "Not a Vehicle"]
+	};
+
+	[true, ""]
 };
 
 PAG_fnc_addRaiseFlagAction = {
@@ -44,7 +58,7 @@ PAG_fnc_addRaiseFlagAction = {
 		"Raise Flag",
 		{
 			params ["_target", "_caller", "_actionId", "_arguments"];
-			if (!([_caller, _target] call PAG_fnc_isValidFlagBearer)) exitWith {};
+			if (!([_caller, _target] call PAG_fnc_canToggleFlag)) exitWith {};
 
 			_target forceFlagtexture "\A3\Data_F\flags\flag_FIA_CO.paa";
 		},
@@ -67,7 +81,7 @@ PAG_fnc_addLowerFlagAction = {
 		"Lower Flag",
 		{
 			params ["_target", "_caller", "_actionId", "_arguments"];
-			if (!([_caller, _target] call PAG_fnc_isValidFlagBearer)) exitWith {};
+			if (!([_caller, _target] call PAG_fnc_canToggleFlag)) exitWith {};
 
 			_target forceFlagtexture "";
 		},
@@ -86,9 +100,7 @@ addMissionEventHandler ["EntityCreated", {
 	params ["_entity"];
 
 	// check if entity is eligble for flag actions
-	if (!alive _entity) exitWith {};
-	if (isPlayer _entity) exitWith {};
-	if (!(_entity isKindOf 'AllVehicles')) exitWith {};
+	if (!([_entity] call PAG_fnc_isValidFlagBearer)) exitWith {};
 
 	// add flag toggle action
 	[_entity] remoteExec ["PAG_fnc_addRaiseFlagAction"];
