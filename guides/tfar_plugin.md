@@ -13,7 +13,7 @@ Choose either the old one
 
 Right click on Arma 3 in your Steam Library and select `Manage` -> `Browse local files`.
 
-![](https://i.imgur.com/eY8fyhm.png)
+![browse local files context menu option](images/browse_local_files.png)
 
 ## Step 3: Navigate to the TeamSpeak 3 Plugin Folder
 
@@ -26,25 +26,25 @@ Right click on Arma 3 in your Steam Library and select `Manage` -> `Browse local
 
 Open the `!Workshop` folder.
 
-![](https://i.imgur.com/1Lcdol8.png)
+![!Workshop folder in Explorer](images/!Workshop_folder.png)
 
 Open the `@task_force_radio` folder or `@Task Force Arrowhead Radio (BETA!!!)` folder.
 
-![](https://i.imgur.com/0VE7yJe.png)
+![@Task Force Arrowhead Radio (BETA!!!) folder in Explorer](images/tfar_folder.png)
 
 Open the `teamspeak` folder.
 
-![](https://i.imgur.com/EZviJQq.png)
+![teamspeak folder in Explorer](images/teamspeak_folder.png)
 
 ## Step 4: Install the Plugin
 
 1. Double click the `task_force_radio.ts3_plugin` file.
 2. Click `Install`.
 
-![](https://i.imgur.com/3ni2VKq.png)
+![TeamSpeak 3 Plugin Installer](images/install_plugin.png)
 
 3. Click `Yes`.
 
-![](https://i.imgur.com/K7IIiEw.png)
+![TeamSpeak 3 Plugin Installer Confirmation Dialogue](images/confirm_install.png)
 
 4. TeamSpeak 3 will ask you to restart the application. Click `OK`.
